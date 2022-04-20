@@ -1,0 +1,14 @@
+package demo;
+
+class A {
+	private int  id;
+	private int age;
+	private String name;
+	private int salary;
+}
+
+public class GetterSetters{
+	public static void main(String[] args) {
+		A a = new A();
+	}
+}

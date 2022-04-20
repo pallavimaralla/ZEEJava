@@ -1,0 +1,18 @@
+package package2;
+import package1.*;
+
+class D extends Demo3{
+	void disp() {
+		
+		Demo3 d = new Demo3();
+		System.out.println(d.a);
+		System.out.println(d.d);
+		System.out.println(d.c);
+		System.out.println(d);
+	}
+
+}
+
+public class Demo4 {
+
+}

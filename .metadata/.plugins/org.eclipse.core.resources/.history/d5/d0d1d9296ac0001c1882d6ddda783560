@@ -1,0 +1,21 @@
+
+import java.sql.*;
+
+public class DBinsert {
+public static void main(String[] args) {
+	try {
+//		Class.forName("oracle.jdbc.driver.OracleDriver");
+		Class.forName("com.mysql.cj.jdbc.Driver");
+//		Connection con = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe ","system","tiger");
+		Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/Employee","root","Pass@123");
+		Statement stmtStatement = con.createStatement();
+		stmtStatement.execute("insert into emp values(2, 'Bob', 30000, 25,'Tester','ABC783')");
+		con.close();
+		System.out.println("Data inserted");
+		
+	} catch (Exception e) {
+		// TODO: handle exception
+		System.out.println(e);
+	}
+}
+}
